@@ -1,6 +1,49 @@
 body {
   background-color: rgb(158, 188, 166);
 }
+.input_block {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border: 1px solid #fff;
+  width: 400px;
+  margin: 20px auto;
+  padding: 10px;
+  border-radius: 20px;
+  box-shadow: 0 0 7px rgba(199, 222, 164, 0.993);
+}
+.input_item {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  margin-bottom: 10px;
+}
+.input_item:last-child {
+  margin-bottom: 0;
+}
+.input_label {
+  width: 160px;
+  margin-right: 5px;
+  text-decoration: underline;
+}
+#input_desc,
+#input_link {
+  border-radius: 5px;
+  border: none;
+  padding: 5px 10px;
+  outline: none !important;
+}
+#input_desc:focus,
+#input_link:focus {
+  outline: none !important;
+}
+.save_btn {
+  width: 70%;
+  border-radius: 5px;
+  border: 1px solid grey;
+  text-transform: uppercase;
+  background-color: #eef1f2b8;
+}
 .header_title {
   margin-top: 30px;
   font-size: 20px;
@@ -44,20 +87,24 @@ body {
   width: 20px;
   color: grey;
   cursor: pointer;
-}
-.block_ico {
-  width: 20px;
-  color: grey;
-  cursor: pointer;
   opacity: 0.6;
   transition: 0.4s;
   position: absolute;
-  bottom: 10px;
-  right: 20px;
+
+  cursor: pointer;
+  width: 20px;
+  color: grey;
   cursor: pointer;
 }
+.ico_copy{
+  bottom: 10px;
+  right: 55px;
+}
+.ico_del{
+  bottom: 10px;
+  right: 20px;
+}
 .block_ico:hover {
-  color: #8ec96c;
   opacity: 1;
 }
 .app_modal {
